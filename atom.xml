@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://smart-jbs.github.io/</id>
-    <title>呆萌男神森森的个人博客</title>
-    <updated>2020-12-14T03:33:04.857Z</updated>
+    <title>呆萌男神森森的博客儿</title>
+    <updated>2020-12-14T04:20:25.793Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://smart-jbs.github.io/"/>
     <link rel="self" href="https://smart-jbs.github.io/atom.xml"/>
     <subtitle>求知若饥，大智若愚</subtitle>
     <logo>https://smart-jbs.github.io/images/avatar.png</logo>
     <icon>https://smart-jbs.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 呆萌男神森森的个人博客</rights>
+    <rights>All rights reserved 2020, 呆萌男神森森的博客儿</rights>
     <entry>
         <title type="html"><![CDATA[2020.12.14]]></title>
         <id>https://smart-jbs.github.io/post/20201214/</id>
