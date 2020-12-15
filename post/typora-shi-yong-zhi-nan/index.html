@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Typora使用指南 | 呆萌男神森森的博客儿</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://smart-jbs.github.io//favicon.ico?v=1608049708607">
+<link rel="stylesheet" href="https://smart-jbs.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一级标题
+二级标题
+三级标题
+四级标题
+五级标题
+六级标题（#+空格+文字 / 行中按ctrl+1~6）
+------------------------------我是分割线--------------------------------..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://smart-jbs.github.io/">
+        <img src="https://smart-jbs.github.io//images/avatar.png?v=1608049708607" class="site-logo">
+        <h1 class="site-title">呆萌男神森森的博客儿</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/smart-jbs" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/tuo-tuo-pi-ku" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      求知若饥，大智若愚
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://smart-jbs.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Typora使用指南</h2>
+            <div class="post-date">2020-12-16</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题空格文字-行中按ctrl1~6">六级标题（#+空格+文字 / 行中按ctrl+1~6）</h6>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>有序列表：</p>
+<ol>
+<li>打开冰箱（1+.+空格）
+<ol>
+<li>插电（tab降级）</li>
+</ol>
+</li>
+<li>开机（shift+tab升级）
+<ol>
+<li>开门</li>
+</ol>
+</li>
+<li>把大象放进冰箱</li>
+<li>关闭冰箱（不再写列表按↓或两下回车）</li>
+</ol>
+<p>（三行选中后ctrl+shift+[，自动排出有序列表或撤销）</p>
+<ol>
+<li>开门</li>
+<li>放入</li>
+<li>关门</li>
+</ol>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>无序链表：</p>
+<ul>
+<li>青菜（*/- + 空格 + 文字）</li>
+<li>水果
+<ol>
+<li>苹果（tab降级）</li>
+<li>梨（ctrl+shift+[ 变成有序列表）</li>
+<li>菠萝
+<ul>
+<li>国产菠萝（两行选中后ctrl+shift+]，自动排出无序列表）</li>
+<li>进口菠萝</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>肉</li>
+</ul>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>任务列表：</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2273146"><label class="task-list-item-label" for="task-item-2273146"> 任务1（-+空格+[+空格+]+空格，要是英文模式的[]）</label></p>
+</li>
+<li class="task-list-item">
+<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-901817"><label class="task-list-item-label" for="task-item-901817"> 任务2（或者选择，点击段落-任务列表）</label></p>
+</li>
+</ul>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>表头：|文字|文字|+回车</p>
+<p>表身：直接按回车会跳出表格，ctrl+回车是添加一行；其他操作</p>
+<p>ctrl+t 创建表格</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">学号</th>
+<th style="text-align:center">姓名</th>
+<th></th>
+<th style="text-align:right">性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">001</td>
+<td style="text-align:center">张三</td>
+<td></td>
+<td style="text-align:right">男</td>
+</tr>
+</tbody>
+</table>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>行内代码：</p>
+<p><code>行内代码</code>  用`</p>
+<p>或者ctrl+shift+`</p>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>代码块：</p>
+<p>3个`+java或者3个~+java或者ctrl+shift+k</p>
+<pre><code class="language-java">public static void main(String[] args){
+    System.out.println(&quot;hello world&quot;);
+}
+</code></pre>
+<pre><code class="language-c++">int n = 10;
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://smart-jbs.github.io/post/20201214/">
+                  <h3 class="post-title">
+                    2020.12.14
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

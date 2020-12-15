@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://smart-jbs.github.io/</id>
     <title>呆萌男神森森的博客儿</title>
-    <updated>2020-12-14T04:20:25.793Z</updated>
+    <updated>2020-12-15T16:28:40.983Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://smart-jbs.github.io/"/>
     <link rel="self" href="https://smart-jbs.github.io/atom.xml"/>
@@ -10,6 +10,105 @@
     <logo>https://smart-jbs.github.io/images/avatar.png</logo>
     <icon>https://smart-jbs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 呆萌男神森森的博客儿</rights>
+    <entry>
+        <title type="html"><![CDATA[Typora使用指南]]></title>
+        <id>https://smart-jbs.github.io/post/typora-shi-yong-zhi-nan/</id>
+        <link href="https://smart-jbs.github.io/post/typora-shi-yong-zhi-nan/">
+        </link>
+        <updated>2020-12-15T16:27:47.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题空格文字-行中按ctrl1~6">六级标题（#+空格+文字 / 行中按ctrl+1~6）</h6>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>有序列表：</p>
+<ol>
+<li>打开冰箱（1+.+空格）
+<ol>
+<li>插电（tab降级）</li>
+</ol>
+</li>
+<li>开机（shift+tab升级）
+<ol>
+<li>开门</li>
+</ol>
+</li>
+<li>把大象放进冰箱</li>
+<li>关闭冰箱（不再写列表按↓或两下回车）</li>
+</ol>
+<p>（三行选中后ctrl+shift+[，自动排出有序列表或撤销）</p>
+<ol>
+<li>开门</li>
+<li>放入</li>
+<li>关门</li>
+</ol>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>无序链表：</p>
+<ul>
+<li>青菜（*/- + 空格 + 文字）</li>
+<li>水果
+<ol>
+<li>苹果（tab降级）</li>
+<li>梨（ctrl+shift+[ 变成有序列表）</li>
+<li>菠萝
+<ul>
+<li>国产菠萝（两行选中后ctrl+shift+]，自动排出无序列表）</li>
+<li>进口菠萝</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>肉</li>
+</ul>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>任务列表：</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2273146"><label class="task-list-item-label" for="task-item-2273146"> 任务1（-+空格+[+空格+]+空格，要是英文模式的[]）</label></p>
+</li>
+<li class="task-list-item">
+<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-901817"><label class="task-list-item-label" for="task-item-901817"> 任务2（或者选择，点击段落-任务列表）</label></p>
+</li>
+</ul>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>表头：|文字|文字|+回车</p>
+<p>表身：直接按回车会跳出表格，ctrl+回车是添加一行；其他操作</p>
+<p>ctrl+t 创建表格</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">学号</th>
+<th style="text-align:center">姓名</th>
+<th></th>
+<th style="text-align:right">性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">001</td>
+<td style="text-align:center">张三</td>
+<td></td>
+<td style="text-align:right">男</td>
+</tr>
+</tbody>
+</table>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>行内代码：</p>
+<p><code>行内代码</code>  用`</p>
+<p>或者ctrl+shift+`</p>
+<p>------------------------------我是分割线--------------------------------</p>
+<p>代码块：</p>
+<p>3个`+java或者3个~+java或者ctrl+shift+k</p>
+<pre><code class="language-java">public static void main(String[] args){
+    System.out.println(&quot;hello world&quot;);
+}
+</code></pre>
+<pre><code class="language-c++">int n = 10;
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.12.14]]></title>
         <id>https://smart-jbs.github.io/post/20201214/</id>
