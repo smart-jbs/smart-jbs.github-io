@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>第零章-代码规范与语言基础 | 呆萌男神森森的博客儿</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://smart-jbs.github.io//favicon.ico?v=1608212148331">
+<link rel="stylesheet" href="https://smart-jbs.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="第零章 代码规范与语言基础
+代码默认规则
+二叉树节点
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    
+    TreeNode..." />
+    <meta name="keywords" content="labuladong的算法小抄,代码模版与整理" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://smart-jbs.github.io/">
+        <img src="https://smart-jbs.github.io//images/avatar.png?v=1608212148331" class="site-logo">
+        <h1 class="site-title">呆萌男神森森的博客儿</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/smart-jbs" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/tuo-tuo-pi-ku" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      求知若饥，大智若愚
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://smart-jbs.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">第零章-代码规范与语言基础</h2>
+            <div class="post-date">2020-12-17</div>
+            
+              <div class="feature-container" style="background-image: url('https://smart-jbs.github.io//post-images/di-ling-zhang-dai-ma-gui-fan-yu-yu-yan-ji-chu.jfif')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="第零章-代码规范与语言基础">第零章 代码规范与语言基础</h1>
+<h2 id="代码默认规则">代码默认规则</h2>
+<h4 id="二叉树节点">二叉树节点</h4>
+<pre><code class="language-java">public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    
+    TreeNode(int val){
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+}
+TreeNode node = new TreeNode(2);
+node.val = 4;
+node.left = node2;
+</code></pre>
+<h4 id="单链表">单链表</h4>
+<pre><code class="language-java">class ListNode {
+    int val;
+    ListNOde next;
+    
+    ListNode(int val){
+        this.val = val;
+        this.next = null;
+    }
+}
+</code></pre>
+<h2 id="语言基础">语言基础</h2>
+<h3 id="c">C++</h3>
+<h4 id="动态数组vector">动态数组vector</h4>
+<pre><code class="language-c++">vector&lt;int&gt; num;
+vector&lt;int&gt; num(3);	//默认值都是0
+vector&lt;int&gt; num{1,3,5};
+vector&lt;int&gt; num(n,2);	//大小为n，初始为2
+vector&lt;vector&lt;int&gt;&gt; dp;
+vector&lt;vector&lt;bool&gt;&gt; dp(m,vector&lt;bool&gt;(n,true));	//初始一个m*n的布尔数组，初始值全为true
+
+reference back()	//返回数组最后一个元素的引用 int b = nums.back(); cout&lt;&lt;b;
+push_back/pop_back
+swap(num[0],num[1])
+</code></pre>
+<h4 id="字符串string">字符串string</h4>
+<pre><code class="language-c++">string s;	//s为&quot;&quot;
+string s = &quot;abc&quot;;
+
+push_back(char c)/pop_back
+substr(pos,len)
+if(s1 == s2)	//c++判断字符串相等
+</code></pre>
+<h4 id="哈希表unordered_map">哈希表unordered_map</h4>
+<pre><code class="language-c++">unordered_map&lt;string, vector&lt;int&gt;&gt; mapping;	//一个key为string，value为int数组的哈希表
+//值可以是任意类型，键一般为int或string
+
+size_type count(const key_type&amp; key);	//返回哈希表中key出现次数，即0/1（哈希表中键不重复）用来判断key是否存在
+size_type erase(const key_type&amp; key);	//通过key清除哈希表中的键值对
+
+//计数器
+vector&lt;int&gt; nums{1,1,3,4,5,3,6};
+unordered_map&lt;int, int&gt; counter;
+for(int num : nums){
+    counter[num]++;	//可以通过方括号直接访问或修改对应键
+}
+
+//遍历
+for(auto&amp; it : counter){
+    int key = it.first;
+    int value = it.second;
+}
+
+
+//注意：用[]访问key时，若key不存在则自动创建，value为默认值
+//所以上述计数器，执行过程实际为：
+if(!counter.count(num)){
+    //新增一个键值对num-&gt;0
+    counter[num] = 0;
+}
+counter[num]++;
+//所以有时候可能需要写key的存在判断，再执行操作
+</code></pre>
+<h4 id="哈希集合unordered_set">哈希集合unordered_set</h4>
+<pre><code class="language-c++">unordered_set&lt;int&gt; visited;
+
+size_type count(const key_type&amp; key)	//类似于哈希表此功能，返回0/1
+pair&lt;iterator,bool&gt; insert(const key_type&amp; key)	//插入一个元素key
+size_type erase(const key_type&amp; key)	//删除集合中的元素key，删除成功返回1，key不存在则返回0
+</code></pre>
+<p>####　队列queue与栈stack</p>
+<pre><code class="language-c++">queue&lt;int&gt; q;
+
+void push()/pop()	//c++中pop是void类型
+value_type&amp; front()
+
+stack&lt;int&gt; stk;
+void push()/pop()
+value_type&amp; top()
+</code></pre>
+<h3 id="java">Java</h3>
+<h4 id="数组">数组</h4>
+<pre><code class="language-java">int[] nums = new int[n];
+boolean[][] visited = new boolean[m][n];
+//有时要做非空判断
+if(nums.length == 0)	return;
+</code></pre>
+<h4 id="字符串">字符串</h4>
+<pre><code class="language-java">//不支持[]访问字符，要转换成char[]才可修改
+char c = s1.charAt(2);
+char[] chars = s1.toCharArray();
+String s2 = new String(chars);
+//用equals判断相等
+if(s1.equals(s2)){	}
+
+//若频繁进行拼接，可用StringBuilder
+StringBuilder sb = new StringBuilder();
+for(char c = 'a'; c &lt; 'f'; c++){
+	sb.append(c);	
+}
+//append方法支持拼接字符，字符串，数字等类型
+sb.append('g').append(&quot;hij&quot;).append(123);
+String res = sb.toString();
+</code></pre>
+<h4 id="动态数组arraylist">动态数组ArrayList</h4>
+<pre><code class="language-java">ArrayList&lt;Integer&gt; nums = new ArrayList&lt;&gt;();
+
+E get(int index)
+boolean add(E e)
+</code></pre>
+<h4 id="双链表linkedlist">双链表LinkedList</h4>
+<pre><code class="language-java">LinkedList&lt;String&gt; strings = new LinkedList&lt;&gt;();
+
+//操作头尾效率高
+boolean contains(Object o)
+boolean add(E e)	//尾部添加
+void addFirst(E e)	//头部添加
+E removeFirst()
+E removeLast()
+    
+//若题目要求返回值为List，ArrayList和LinkedList均为List子类可以返回
+</code></pre>
+<h4 id="哈希表hashmap">哈希表HashMap</h4>
+<pre><code class="language-java">HashMap&lt;String, int[]&gt; map = new HashMap();
+
+boolean containsKey(Object key)	//是否存在键
+V get(Object key)
+V put(K key,V value)
+V remove(Object key)
+V getOrDefault(Object key, V defaultValue)
+Set&lt;K&gt; keySet()	//获取哈希表中所有key
+V putIfAbsent(K key, V value)	//如果key不存在，则存入key-value，否则什么都不做
+</code></pre>
+<h4 id="哈希集合hashset">哈希集合HashSet</h4>
+<pre><code class="language-java">Set&lt;String&gt; set = new HashSet&lt;&gt;();
+boolean add(E e)	//若不存在则添加
+boolean contains(Object o)
+boolean remove(Object o)
+</code></pre>
+<h4 id="队列queue">队列queue</h4>
+<pre><code class="language-java">Queue&lt;String&gt; q = new LinkedList&lt;&gt;();	//Queue是个接口
+
+E peek()	//返回头部元素
+E poll()	//删除并返回头部元素
+boolean offer(E e)	//e插入队尾
+</code></pre>
+<h4 id="栈stack">栈stack</h4>
+<pre><code class="language-java">Stack&lt;Integer&gt; s = new Stack&lt;&gt;();
+
+E push(E item)
+E peek()	//返回栈顶元素
+E pop()	//删除并返回栈顶元素
+</code></pre>
+<h3 id="python">Python</h3>
+<pre><code class="language-python"># 列表list可以做数组，堆栈或队列
+arr = [1,2,3,4]
+print(arr[2])
+arr.append(5)
+print(arr[-1])
+
+stack = []
+#　栈顶添加
+stack.append(1)
+# 删除并返回栈顶
+e1 = stack.pop()
+# 查看栈顶
+e2 = stack[-1]
+
+# 元组和字典
+memo = dict()
+# 二维动态规划dp函数
+def dp(i,j):
+    # 元组（i，j）作为哈希表的键
+    # 用in查询该键是否存在与哈希表
+    if (i,j) in memo:
+        return memo[(i,j)]
+    memo[(i,j)] = ...
+    
+    return memo[(i,j)]
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://smart-jbs.github.io/tag/djay6SFTy/" class="tag">
+                    labuladong的算法小抄
+                  </a>
+                
+                  <a href="https://smart-jbs.github.io/tag/MYuYLdsVi/" class="tag">
+                    代码模版与整理
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://smart-jbs.github.io/post/typora-shi-yong-zhi-nan/">
+                  <h3 class="post-title">
+                    Typora使用指南
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
