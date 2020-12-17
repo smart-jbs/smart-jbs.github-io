@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://smart-jbs.github.io/</id>
     <title>呆萌男神森森的博客儿</title>
-    <updated>2020-12-15T16:33:40.048Z</updated>
+    <updated>2020-12-17T11:16:52.845Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://smart-jbs.github.io/"/>
     <link rel="self" href="https://smart-jbs.github.io/atom.xml"/>
@@ -16,7 +16,8 @@
         <link href="https://smart-jbs.github.io/post/typora-shi-yong-zhi-nan/">
         </link>
         <updated>2020-12-15T16:27:47.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="一级标题">一级标题</h1>
+        <content type="html"><![CDATA[<p>开始写博客的时候发现，gridea文章编辑的markdown功能咋用呢？写代码的话总不能每行都用 <strong>`</strong> 来包括吧，这也太麻烦了。回去看了Gridea的教程，发现人家都是先在markdown编辑工具中写好，再直接粘贴过来。那我们就先搞定Typora吧！</p>
+<h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
 <h3 id="三级标题">三级标题</h3>
 <h4 id="四级标题">四级标题</h4>
@@ -66,10 +67,10 @@
 <p>任务列表：</p>
 <ul class="contains-task-list">
 <li class="task-list-item">
-<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-952350"> 任务1（<strong>-+空格+[+空格+]+空格，要是英文模式的[]</strong><label class="task-list-item-label" for="task-item-952350"> 任务1（**-+空格+[+空格+]+空格，要是英文模式的[]**）</label></p>
+<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4072642"> 任务1（<strong>-+空格+[+空格+]+空格，要是英文模式的[]</strong><label class="task-list-item-label" for="task-item-4072642"> 任务1（**-+空格+[+空格+]+空格，要是英文模式的[]**）</label></p>
 </li>
 <li class="task-list-item">
-<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2927267"> 任务2（<strong>或者选择，点击段落-任务列表</strong><label class="task-list-item-label" for="task-item-2927267"> 任务2（**或者选择，点击段落-任务列表**）</label></p>
+<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4518266"> 任务2（<strong>或者选择，点击段落-任务列表</strong><label class="task-list-item-label" for="task-item-4518266"> 任务2（**或者选择，点击段落-任务列表**）</label></p>
 </li>
 </ul>
 <p>------------------------------我是分割线--------------------------------</p>
